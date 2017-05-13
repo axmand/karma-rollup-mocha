@@ -1,13 +1,10 @@
 # karma-rollup-mocha
 
 ### first step: ###
-
 ```
 npm install
-
 ```
 ### second step: ###
-
 ```
 npm install -g karma-cli
 ```
