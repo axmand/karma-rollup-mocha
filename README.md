@@ -1,10 +1,19 @@
 # karma-rollup-mocha
-first setp:
 
+### first step: ###
+
+```
 npm install
 
-You will need to do this if you want to run Karma on Windows from the command line.
+```
+### second step: ###
+
+```
 npm install -g karma-cli
+```
+You will need to do this if you want to run Karma on Windows from the command line.
 
-command: karma start
-
+### start karam ###
+```
+karma start
+```
