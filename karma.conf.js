@@ -1,7 +1,7 @@
 module.exports = function (config) {
 	config.set({
 		basePath: '.',
-		frameworks: ['mocha', 'chai'],
+		frameworks: ['mocha','chai'],
 		files: [
 			// Watch src files for changes but
 			// don't load them into the browser.
