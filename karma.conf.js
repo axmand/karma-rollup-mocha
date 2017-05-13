@@ -6,6 +6,7 @@ module.exports = function (config) {
 			// Watch src files for changes but
 			// don't load them into the browser.
 			{ pattern: 'src/**/*.js', included: false },
+			'src/init.js',
 			'test/**/*.spec.js',
 		],
 
@@ -20,6 +21,7 @@ module.exports = function (config) {
 				require('rollup-plugin-buble')(),
 			],
 			format: 'iife',
+			
 			moduleName: 'test',//<your_project>
 			sourceMap: 'inline',
 		},
