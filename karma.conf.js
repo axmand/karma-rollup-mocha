@@ -1,13 +1,13 @@
 module.exports = function (config) {
 	config.set({
 		basePath: '.',
-		frameworks: ['mocha','chai'],
+		frameworks: ['mocha', 'chai'],
 		files: [
+			'test/**/*.spec.js',
 			// Watch src files for changes but
 			// don't load them into the browser.
 			{ pattern: 'src/**/*.js', included: false },
-			'src/init.js',
-			'test/**/*.spec.js',
+
 		],
 
 		preprocessors: {
@@ -21,7 +21,6 @@ module.exports = function (config) {
 				require('rollup-plugin-buble')(),
 			],
 			format: 'iife',
-			
 			moduleName: 'test',//<your_project>
 			sourceMap: 'inline',
 		},
