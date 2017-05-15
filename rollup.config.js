@@ -5,7 +5,7 @@ export default {
     entry: './src/init.js',
     format: 'iife',
     dest: './dist/bundle.js',
-    moduleName:'test',
+    moduleName:'test', //rename into you own project namespace
     plugins: [
         resolve(),
         babel({

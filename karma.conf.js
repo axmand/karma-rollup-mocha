@@ -21,7 +21,7 @@ module.exports = function (config) {
 				require('rollup-plugin-buble')(),
 			],
 			format: 'iife',
-			moduleName: 'test',//<your_project>
+			moduleName: 'test',//rename into you own project namespace
 			sourceMap: 'inline',
 		},
 

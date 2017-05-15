@@ -1,12 +1,14 @@
 {
-  "name": "karma-rollup-mocha",
+  "name": "karma-rollup-mocha", //rename into you own project name
   "version": "1.0.0",
   "description": "",
   "main": "dist/bundle.js",
   "scripts": {
+    /* if you want to publish it,uncomment these three rows
+    // "compile":"rollup -c",        
+    // "prepublish":"npm run compile", 
+    */
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile":"rollup -c",
-    "prepublish":"npm run compile",
     "start":"karma start"
   },
   "repository": {
