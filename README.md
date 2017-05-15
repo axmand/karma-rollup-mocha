@@ -14,7 +14,7 @@ You will need to do this if you want to run Karma on Windows from the command li
 ```
 karma start
 ```
-if you confirm tha all of your tests success,build 'bundle.js' as an output.
+If you confirmed that all of your tests runs well,you can build 'bundle.js' as an output.
 ### install rollup ###
 ```
 npm install -g rollup 
@@ -24,4 +24,4 @@ You will need to install rollup in global if you want to run rollup on Windows f
 ```
 rollup -c
 ```
-the output folder location is "./dist/*"
+The default output folder's location : "./dist/*"
