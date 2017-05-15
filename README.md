@@ -24,4 +24,4 @@ You will need to install rollup in global if you want to run rollup on Windows f
 ```
 rollup -c
 ```
-the output folder location is "./dist/*",the default is bundle.js
+the output folder location is "./dist/*"
