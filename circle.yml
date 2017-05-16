@@ -3,4 +3,4 @@ machine:
     version: 6.9.0
 test:
   post:
-  - npm test
+  - karma start -single-run 
