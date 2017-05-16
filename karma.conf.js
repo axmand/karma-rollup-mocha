@@ -1,5 +1,5 @@
 module.exports = function (config) {
-	config.set({
+	let cfg={
 		basePath: '.',
 		frameworks: ['mocha', 'chai'],
 		browsers: ['Chrome'],
@@ -24,6 +24,12 @@ module.exports = function (config) {
 			moduleName: 'test',//rename into you own project namespace
 			sourceMap: 'inline',
 		},
+		customLaunchers: {
+			Chrome_travis_ci: {
+				base: 'Chrome',
+				flags: ['--no-sandbox']
+			}
+		},
 		customPreprocessors: {
 			// Clones the base preprocessor, but overwrites
 			// its options with those defined below.
@@ -39,5 +45,9 @@ module.exports = function (config) {
 				}
 			}
 		}
-	});
+	};
+	if (process.env.TRAVIS) {
+        cfg.browsers = ['Chrome_travis_ci'];
+    }
+	config.set(cfg);
 };
