@@ -2,6 +2,8 @@ module.exports = function (config) {
 	config.set({
 		basePath: '.',
 		frameworks: ['mocha', 'chai'],
+		browsers: ['Chrome'],
+		reporters: ['mocha'],
 		files: [
 			'test/**/*.spec.js',
 			// Watch src files for changes but
@@ -9,13 +11,11 @@ module.exports = function (config) {
 			{ pattern: 'src/**/*.js', included: false },
 
 		],
-
 		preprocessors: {
 			//'test/buble/**/*.spec.js': ['rollup'],
 			'src/**/*.js': ['rollupBabel'],
 			'test/**/*.spec.js': ['rollupBabel'],
 		},
-
 		rollupPreprocessor: {
 			plugins: [
 				require('rollup-plugin-buble')(),
@@ -24,7 +24,6 @@ module.exports = function (config) {
 			moduleName: 'test',//rename into you own project namespace
 			sourceMap: 'inline',
 		},
-
 		customPreprocessors: {
 			// Clones the base preprocessor, but overwrites
 			// its options with those defined below.
