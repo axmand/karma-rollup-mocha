@@ -1,9 +1,9 @@
 module.exports = function (config) {
-	let cfg={
+	let cfg = {
 		basePath: '.',
 		frameworks: ['mocha', 'chai'],
 		browsers: ['Chrome'],
-		reporters: ['mocha'],
+		reporters: ['mocha', 'coverage'],
 		files: [
 			'test/**/*.spec.js',
 			// Watch src files for changes but
@@ -13,8 +13,23 @@ module.exports = function (config) {
 		],
 		preprocessors: {
 			//'test/buble/**/*.spec.js': ['rollup'],
-			'src/**/*.js': ['rollupBabel'],
-			'test/**/*.spec.js': ['rollupBabel'],
+			'src/**/*.js': ['rollupBabel', 'coverage'],
+			'test/**/*.spec.js': ['rollupBabel', 'coverage'],
+		},
+		coverageReporter: {
+			dir: 'coverage/',
+			instrumenterOptions: {
+				istanbul: { noCompact: true }
+			},
+			reporters: [
+				{ type: 'html', subdir: 'report-html' },
+				{ type: 'lcov', subdir: 'report-lcov' },
+				{ type: 'cobertura', subdir: '.', file: 'cobertura.txt' },
+				{ type: 'lcovonly', subdir: '.', file: 'report-lcovonly.txt' },
+				{ type: 'teamcity', subdir: '.', file: 'teamcity.txt' },
+				{ type: 'text', subdir: '.', file: 'text.txt' },
+				{ type: 'text-summary', subdir: '.', file: 'text-summary.txt' },
+			]
 		},
 		rollupPreprocessor: {
 			plugins: [
@@ -47,7 +62,7 @@ module.exports = function (config) {
 		}
 	};
 	if (process.env.TRAVIS) {
-        cfg.browsers = ['Chrome_travis_ci'];
-    }
+		cfg.browsers = ['Chrome_travis_ci'];
+	}
 	config.set(cfg);
 };
