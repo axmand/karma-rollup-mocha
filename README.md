@@ -2,8 +2,8 @@
 [![Build Status](https://travis-ci.org/axmand/karma-rollup-mocha.svg?branch=master)](https://travis-ci.org/axmand/karma-rollup-mocha)
 [![codecov](https://codecov.io/gh/axmand/karma-rollup-mocha/branch/master/graph/badge.svg)](https://codecov.io/gh/axmand/karma-rollup-mocha)
 
-##  unit test  ##
-unit test to make sure your code runs well
+##  Unit test  ##
+>Unit test to make sure your code runs well
 ### first step: ###
 ```
 npm install
@@ -12,25 +12,25 @@ npm install
 ```
 npm install -g karma-cli
 ```
-You will need to do this if you want to run Karma on Windows from the command line.
+>You will need to do this if you want to run Karma on Windows from the command line.
 
 ### start karam ###
 ```
 karma start
 ```
-##  build  ##
-Building 'dist/bundle.js' as an output if you confirmed that all of your tests runs well.
+##  Build  ##
+>Building 'dist/bundle.js' as an output if you confirmed that all of your tests runs well.
 ### install rollup ###
 ```
 npm install -g rollup 
 ```
-You will need to install rollup in global if you want to run rollup on Windows from the command line.
+>You will need to install rollup in global if you want to run rollup on Windows from the command line.
 ### build ###
 ```
 rollup -c
 ```
-The default output folder's location : "./dist/*"
-##  npm publish  ##
+>The default output folder's location : "./dist/*"
+##  Npm publish  ##
 ```
 npm publish
 ```
@@ -39,5 +39,5 @@ Before publish you code to npm,you need to ensure npm contains one user at least
 ```
 npm adduser
 ```
-Then add username/password/email
+>Then add username/password/email
 
