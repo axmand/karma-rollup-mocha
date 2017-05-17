@@ -1,5 +1,7 @@
 # karma-rollup-mocha #
 [![Build Status](https://travis-ci.org/axmand/karma-rollup-mocha.svg?branch=master)](https://travis-ci.org/axmand/karma-rollup-mocha)
+[![codecov](https://codecov.io/gh/axmand/karma-rollup-mocha/branch/master/graph/badge.svg)](https://codecov.io/gh/axmand/karma-rollup-mocha)
+
 ##  unit test  ##
 unit test to make sure your code runs well
 ### first step: ###
