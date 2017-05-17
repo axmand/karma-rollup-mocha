@@ -4,6 +4,7 @@
   "description": " ",
   "main": "dist/bundle.js",
   "scripts": {
+    "report-coverage": "codecov",
     "compile": "rollup -c",
     "prepublish": "npm run compile",
     "test": "karma start karma.conf.js --single-run",
