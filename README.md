@@ -1,6 +1,6 @@
-# karma-rollup-mocha
+# karma-rollup-mocha #
 [![Build Status](https://travis-ci.org/axmand/karma-rollup-mocha.svg?branch=master)](https://travis-ci.org/axmand/karma-rollup-mocha)
-##  1. unit test  ##
+##  unit test  ##
 unit test to make sure your code runs well
 ### first step: ###
 ```
@@ -16,7 +16,7 @@ You will need to do this if you want to run Karma on Windows from the command li
 ```
 karma start
 ```
-##  2. build  ##
+##  build  ##
 Building 'dist/bundle.js' as an output if you confirmed that all of your tests runs well.
 ### install rollup ###
 ```
@@ -28,7 +28,7 @@ You will need to install rollup in global if you want to run rollup on Windows f
 rollup -c
 ```
 The default output folder's location : "./dist/*"
-##  3. npm publish  ##
+##  npm publish  ##
 ```
 npm publish
 ```
