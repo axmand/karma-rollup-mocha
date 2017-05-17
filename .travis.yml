@@ -1,6 +1,5 @@
 language: node_js
 node_js:
-  - "iojs"
   - "6.10.3"
 sudo: false
 before_install:
@@ -14,5 +13,4 @@ before_script:
   - npm install
 script:
   - npm test
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
   - codecov
