@@ -1,4 +1,5 @@
 # karma-rollup-mocha
+[![Build Status](https://travis-ci.org/axmand/kiwi.gl.svg?branch=master)](https://travis-ci.org/axmand/kiwi.gl)
 ##  1. unit test  ##
 unit test to make sure your code runs well
 ### first step: ###
