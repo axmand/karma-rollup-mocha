@@ -17,7 +17,7 @@ You will need to do this if you want to run Karma on Windows from the command li
 karma start
 ```
 ##  2. build  ##
-If you confirmed that all of your tests runs well,you can build 'bundle.js' as an output.
+Building 'dist/bundle.js' as an output if you confirmed that all of your tests runs well.
 ### install rollup ###
 ```
 npm install -g rollup 
