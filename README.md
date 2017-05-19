@@ -34,7 +34,7 @@ rollup -c
 ```
 npm publish
 ```
->Before publish code to npm,you need to add one user at least.
+>Before publish code to npm,you need to add one account at least.
 ### add npm user ###
 ```
 npm adduser
