@@ -41,8 +41,8 @@ npm adduser
 ```
 >Then add username/password/email
 
-## debugger for chrome ##
-Add setting in VSC's launch.json
+## Debugger for chrome ##
+>Add settings in VSC launch.json
 ```
  {
      "type": "chrome",
@@ -57,8 +57,8 @@ Add setting in VSC's launch.json
      }
  }
 ```
- running code 
+ >running code 
  ```
  karma start
  ```
- and then press 'F5' to attach the source,enjoy it!
+ >press 'F5' to attach the source , enjoy it!
