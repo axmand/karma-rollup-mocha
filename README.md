@@ -41,3 +41,24 @@ npm adduser
 ```
 >Then add username/password/email
 
+## debugger for chrome ##
+Add setting in VSC's lanch.json
+```
+ {
+     "type": "chrome",
+     "request": "attach",
+     "name": "Attach Karma Chrome",
+     "address": "localhost",
+     "port": 9333,
+     "webRoot": "${workspaceRoot}",
+     "pathMapping": {
+         "/": "${workspaceRoot}",
+         "/base/": "${workspaceRoot}/"
+     }
+ }
+```
+ running code 
+ ```
+ karma start
+ ```
+ and then press 'F5' to attach the source,enjoy it!
