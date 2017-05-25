@@ -42,7 +42,7 @@ npm adduser
 >Then add username/password/email
 
 ## debugger for chrome ##
-Add setting in VSC's lanch.json
+Add setting in VSC's launch.json
 ```
  {
      "type": "chrome",
