@@ -3,7 +3,7 @@
 [![codecov](https://codecov.io/gh/axmand/karma-rollup-mocha/branch/master/graph/badge.svg)](https://codecov.io/gh/axmand/karma-rollup-mocha)
 
 ##  Unit test  ##
->Unit test to make sure your code runs well
+>Unit test to make you code runs well
 ### first step: ###
 ```
 npm install
