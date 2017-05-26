@@ -4,11 +4,11 @@
 
 ##  Unit test  ##
 >Unit test to make you code runs well
-### first step: ###
+### step 1: ###
 ```
 npm install
 ```
-### second step: ###
+### step 2: ###
 ```
 npm install -g karma-cli
 ```
